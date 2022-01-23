@@ -1,0 +1,356 @@
+body {
+    background-color: #f0f2f5;
+
+}
+
+.main {
+    width: 100%;
+    height: 720px;
+    padding: 72px 0px 112px 0px;
+}
+.container {
+    width: 980px;
+    height: 536px;
+    padding:20px 0px;
+    margin: 0px auto;
+}
+
+/* CONTENT */
+.content {
+    float:left;
+    width: 548px;
+}
+
+.content img {
+    height: 106px;
+    padding:104px 0px 16px 0px;
+    margin: -28px;
+}
+
+.content h2 {
+    margin: 0px;
+    font-size: 28px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    width: 500px;
+}
+
+/* SIGN IN */
+.sign-in {
+    float:right;
+    width: 396px;
+    margin-top: 32px;
+    margin-right: 4px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 24px 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+#usename,
+#password {
+    border-radius: 6px;
+    padding:15px 16px;
+    width: 330px;
+    border: 1px solid #dddfe2;
+    font-size: 17px;
+    margin: 6px 16px;
+    outline: none;
+}
+
+#usename:focus,
+#password:focus  {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877f2;
+}
+#signin {
+    width: 364px;
+    padding:0px 16px;
+    margin-top: 10px;
+    margin-left:16px;
+    font-size: 20px;
+    line-height: 48px;
+    border: none;
+    background-color: #1877f2;
+    border-radius: 6px;
+    cursor: pointer;
+    color:#fff;
+    font-weight: 700;
+}
+
+#signin:hover {
+    background-color: #166fe5;
+}
+
+#forget {
+    text-decoration: none;
+    color: #1877f2;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+#forget:hover {
+    text-decoration: underline;
+}
+
+#create {
+    width: 178.225px;
+    padding:0px 16px;
+    margin-top: 7px;
+    font-size: 17px;
+    line-height: 48px;
+    border: none;
+    background-color: #42b72a;
+    border-radius: 6px;
+    cursor: pointer;
+    color:#fff;
+    font-weight: 700;
+}
+
+#create:hover {
+    background-color: #36a420;
+}
+.more {
+    margin-top: 28px;
+    color:#1c1e21;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18.42px;
+}
+
+.more >a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.more >a:hover {
+    text-decoration: underline;
+}
+
+
+/* FORM SIGN UP */
+#levelup {
+    display: flex;
+    /* Cách 1: (để căn giữa div cha)
+    justify-content: center;
+    align-items: center; */
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 10;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .8);
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+#form-signup {
+    margin: auto;
+    width: 432px;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+#head-form {
+    padding:10px 16px;
+}
+
+#head-form >h1 {
+    font-size: 32px;
+    line-height: 38px;
+    color:#1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+#head-form >p {
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+}
+
+#close {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#body-form {
+    border-top: 1px solid #dadde1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.invalid {
+    border-color: red !important;
+}
+
+.errorMessage{
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/jj6_u_qUuY8.png) 0 0 no-repeat;
+    background-size: auto;
+    display: none;
+    height: 21px !important;
+    width: 21px !important;
+}
+
+#fullname {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-input span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scale(.76);
+}
+
+#fullname input {
+    width: 170px;
+    padding: 11px;
+    border-radius: 5px;
+    border:1px solid #ccd0d5;
+    background-color: #f5f6f7;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+#body-form input {
+    padding: 11px;
+    border-radius: 5px;
+    border:1px solid #ccd0d5;
+    background-color: #f5f6f7;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.datebirth {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.label {
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.datebirth select {
+    height: 36px;
+    border-radius: 4px;
+    color: #1c1e21;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    border: 1px solid #ccd0d5;
+    width: 125px;
+    outline: none;
+}
+i {
+    display: inline-block;
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/KTrAlCOQGTJ.png)  0 -96px no-repeat;
+    background-size: 110px 110px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top:2px;
+}
+#sex {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#sex >span {
+    display: inline-block;
+    height: 36px;
+    border-radius: 4px;
+    color: #1c1e21;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 36px;
+    border: 1px solid #ccd0d5;
+}
+
+#sex >span>label {
+    margin-left: 8px;
+    margin-right: 45px;
+}
+
+#sex >span>input {
+    position: relative;
+    top:2px;
+    margin-right: 9px;
+}
+
+#body-form >p {
+    font-size: 11px;
+    color:#777;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#body-form >p>a {
+    text-decoration: none;
+    color:#385898;
+}
+
+#body-form >p>a:hover {
+    text-decoration: underline;
+}
+
+#body-form >button {
+    width: 194px;
+    height: 36px;
+    margin: 10px auto;
+    background-color: #00a400;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 32px;
+    cursor: pointer;
+    border:none;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#body-form >button:hover {
+    background: linear-gradient(#79bc64, #578843);
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
