@@ -60,7 +60,7 @@ body {
     width: 330px;
     border: 1px solid #dddfe2;
     font-size: 17px;
-    margin: 6px 0px;
+    margin: 6px 16px;
     outline: none;
 }
 
@@ -74,6 +74,7 @@ body {
     width: 364px;
     padding:0px 16px;
     margin-top: 10px;
+    margin-left:16px;
     font-size: 20px;
     line-height: 48px;
     border: none;
